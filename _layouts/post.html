@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="phdr"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="itemscope"><a itemprop="url" href="/"><span itemprop="title"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</span></a></span> » <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="itemscope"><a itemprop="url" href="{{ post.url }}"><span itemprop="title"><i class="fa fa-spinner fa-pulse fa-fw"></i> {{page.title}}</span></a></span></div>
+<div class="phdr" id="post1"><table cellpadding="0" cellspacing="0" width="100%"><tr><td><i class="fa fa-clock-o" aria-hidden="true"></i> {{ page.date | date: "%B %d, %Y" }}</td></tr></table></div>
+<div class="list1" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">
+<table cellpadding="0" cellspacing="0" width="100%"><tr valign="top"><td width="38">
+<img src="https://i.imgur.com/2Sud7jM.png" style="border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;" width="38px" height="38px" />
+</td><td>
+<a href="/about/"><span><b>{% if page.author %}{{ page.author }}{% else %}{{ site.author.name }}{% endif %}</b></span><br />
+</td></tr></table></div>
+<div class="menu">
+{{ content }}
+</div>

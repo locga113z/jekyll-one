@@ -1,0 +1,24 @@
+# Site settings
+title:          Quasar
+description:    "Blog Cá Nhân"
+baseurl:        "/jekyll-one"
+url:            "https://gingnero.github.io/jekyll-one"
+
+# Author
+author:
+  name:         Ging
+  email:        123@abc.com
+
+# Build settings
+markdown:       kramdown
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji 
+
+# Permalinks
+permalink:      /:title/
+paginate:       12
