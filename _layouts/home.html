@@ -5,6 +5,6 @@ layout: default
 <div class="phdr"><i class="fa fa-book" aria-hidden="true"></i> Mới cập nhật</div>
 {% for post in paginator.posts %}
 <div class="list1">
-<a  href="{{ post.url | prepend: site.url }}">
+<a  href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
 <i class="fa fa-rss" aria-hidden="true"></i> {{ post.title }}</a> </div>
 {% endfor %}
