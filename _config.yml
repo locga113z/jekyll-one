@@ -2,7 +2,7 @@
 title:          "Collect"
 description:    "Blog Sưu Tầm"
 baseurl:        "/"
-url:            "https://mellody.netlify.com"
+url:            "https://mellody.netlify.com/"
 
 # Author
 author:
