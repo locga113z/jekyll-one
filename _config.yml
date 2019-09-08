@@ -1,13 +1,13 @@
 # Site settings
-title:          Quasar
-description:    "Blog Cá Nhân"
-baseurl:        "/jekyll-one"
-url:            "https://gingnero.github.io/jekyll-one"
+title:          "POKE's Site"
+description:    "Blog Sưu Tầm"
+baseurl:        "/"
+url:            "https://mellody.netlify.com"
 
 # Author
 author:
-  name:         Ging
-  email:        123@abc.com
+  name:         BROOK
+  email:        ice147ender@gmail.com
 
 # Build settings
 markdown:       kramdown
