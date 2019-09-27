@@ -4,13 +4,13 @@ layout: default
 
 <div class="card-group">
 {% for post in paginator.posts %}
-  <div class="card">
+  <div class="card mb-3">
     <div class="card-body">
       <h5 class="card-title"><a  href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h5>
-      <p class="card-text">{{ content | slice: 1, 200 }}</p>
+      <p class="card-text">{{ post.content | slice: 1, 200 }}</p>
     </div>
     <div class="card-footer">
-      <small class="text-muted">{{ page.date | date: "%H:%i, %d %m %Y" }}</small>
+      <small class="text-muted">{{ post.date | date: "%H:%i, %d %m %Y" }}</small>
     </div>
   </div>
 {% endfor %}

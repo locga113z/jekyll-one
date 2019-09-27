@@ -21,3 +21,10 @@ plugins:
 # Permalinks
 permalink:      /:title.html
 paginate:       12
+
+# Navbar
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "#!"
