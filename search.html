@@ -1,6 +1,13 @@
 ---
 layout: search
 ---
+
+<!DOCTYPE html>
+<html lang="vi">
+{% include head.html %}
+<body>
+{% include nav.html %}
+<main class="mt-3"> <div class="container">
 <form action="/search.html" method="get">
   <label for="search-box">Search</label>
   <input type="text" id="search-box" name="query">
@@ -23,5 +30,13 @@ layout: search
     {% endfor %}
   };
 </script>
+</div> </main>
+{% include foot.html %}
+<link rel="stylesheet" href="https://locga113z.github.io/css/all.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.js "></script>
 <script src="/js/search.js"></script>
+</body>
+</html>
