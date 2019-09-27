@@ -24,7 +24,7 @@ paginate:       12
 
 # Navbar
 nav:
-  - title: "Home"
+  - title: "Trang chủ"
     url: "/"
-  - title: "About"
+  - title: "Thông tin"
     url: "#!"
