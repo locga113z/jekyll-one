@@ -2,9 +2,16 @@
 layout: default
 ---
 
-<div class="phdr"><i class="fa fa-book" aria-hidden="true"></i> Mới cập nhật</div>
+<div class="card-group">
 {% for post in paginator.posts %}
-<div class="list1">
-<a  href="{{ post.url | prepend: site.url }}">
-<i class="fa fa-rss" aria-hidden="true"></i> {{ post.title }}</a> </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><a  href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h5>
+      <p class="card-text">{{ content | slice: 1, 200 }}</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">{{ page.date | date: "%H:%i, %d %m %Y" }}</small>
+    </div>
+  </div>
 {% endfor %}
+</div>
