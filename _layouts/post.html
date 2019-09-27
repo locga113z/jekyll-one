@@ -4,13 +4,13 @@ layout: default
 
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item active"><a href="{{ site.url }}">Trang chủ</a></li>
-    <li class="breadcrumb-item"><a href="{{ post.url }}">{{ page.title | truncatewords: 10 }}</a></li>
+    <li class="breadcrumb-item"><a href="{{ site.url }}">Trang chủ</a></li>
+    <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
   </ol>
 </nav>
 
 <div class="card mb-3 border-primary"> <div class="card-body">
 <h1 class="card-title">{{ page.title }}</h1>
-<small class="card-subtitle my-2 text-muted"><i class="fa fa-clock-o"></i> {{ page.date | date: "%H:%M %d/%m/%Y" }}</small>
+<small class="card-subtitle my-2 text-muted"><i class="fal fa-clock"></i> {{ page.date | date: "%H:%M %d/%m/%Y" }}</small>
 <p class="card-text"> {{ content }} </p>
 </div> </div>
