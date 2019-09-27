@@ -19,5 +19,5 @@ plugins:
   - jekyll-seo-tag
 
 # Permalinks
-permalink:      /:title/
+permalink:      /:title.html
 paginate:       12
