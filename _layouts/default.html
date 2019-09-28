@@ -7,9 +7,9 @@ layout: compress
 {% include head.html %}
 <body style="background-color:#f2f2f2">
 {% include nav.html %}
-<main class="my-3"> <div class="container"> <div class="row">
-<div class="col-md-6"> {{ content }} </div>
-<div class="col-md-4">
+<main class="my-3"> <div class="container">
+{{ content }}
+
 <div class="card" id="search-container"> <div class="card-body">
 <h5 class="card-title">Tìm Kiếm</h5>
 <div class="form-group"> <input type="search" id="search-input" placeholder="Tìm kiếm..." class="form-control" /> </div>
@@ -26,7 +26,6 @@ SimpleJekyllSearch({
   json: '/search.json'
 })
 </script>
-</div>
 </div> </main>
 {% include foot.html %}
 <link rel="stylesheet" href="https://locga113z.github.io/css/all.css" />
