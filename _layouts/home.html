@@ -4,7 +4,7 @@ layout: default
 
 <div class="card-group">
 {% for post in paginator.posts %}
-  <div class="card mb-3 border-primary">
+  <div class="card mb-3">
     <div class="card-body">
       <h1 class="card-title"><a  href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h1>
       <small class="card-subtitle my-2 text-muted"><i class="fal fa-clock"></i> {{ post.date | date: "%H:%M %d/%m/%Y" }}</small>
