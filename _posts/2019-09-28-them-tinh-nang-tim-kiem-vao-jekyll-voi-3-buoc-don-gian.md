@@ -33,7 +33,7 @@ Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiê
     }
 ]
 ```
-### Bước 1: Tạo một tệp JSON
+#### Bước 1: Tạo một tệp JSON
 
 Đầu tiên bạn hãy vào thư mục gốc và tạo một file có tên là `search.json` có nội dung sau đây:
 
@@ -112,13 +112,13 @@ Bạn cũng có thể thêm `post.content` vào đây nhưng mình khuyên bạn
 
 Từ những gì mình đã trải nghiệm, giá trị bạn đặt lên đầu sẽ được ưu tiên. Trong ví dụ trên, tiêu đề sẽ được ưu tiên cao nhất và đoạn trích được thấp nhất. Thay đổi điều này theo nhu cầu của bạn.
 
-### Bước 2: Tạo tệp script
+#### Bước 2: Tạo tệp script
 
 Vào trang [này](https://raw.githubusercontent.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js) sao chép toàn bộ và lưu với tên `search-script.js` (hoặc bất kỳ tên nào) tại trang của bạn.
 
 > Sẽ tốt hơn nếu bạn tạo thư mục `js` và bỏ nó vào.
 
-### Bước 3: Tạo trang tìm kiếm
+#### Bước 3: Tạo trang tìm kiếm
 
 Tạo file `search.html` (hoặc bất kỳ tên nào và dán code sau:
 
