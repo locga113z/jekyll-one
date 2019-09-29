@@ -7,7 +7,7 @@ layout: default
   <div class="card mb-3">
     <div class="card-body">
       <h2 class="card-title"><a  href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h2>
-      <small class="card-subtitle my-2 text-muted"><span class="mx-2"><i class="fal fa-clock"></i> {{ post.date | date: "%H:%M %d/%m/%Y" }}</span> <span class="mx-2"><i class="fal fa-user"></i> {{ post.author | default: site.author }}</span> <span class="mx-2"><i class="fal fa-folder"></i> {% for category in post.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</span></small>
+      <small class="card-subtitle my-2 text-muted"><span class="mx-2"><i class="fal fa-clock"></i> {{ post.date | date: "%H:%M %d/%m/%Y" }}</span> <span class="mx-2"><i class="fal fa-user"></i> {{ post.author | default: site.author['name'] }}</span> <span class="mx-2"><i class="fal fa-folder"></i> {% for category in post.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</span></small>
       <p class="card-text text-justify"> {{ post.content | strip | strip_html | truncatewords: 50 }} </p>
       <a class="btn btn-primary" href="{{ post.url | prepend: site.url }}">Đọc tiếp</a>
     </div>
