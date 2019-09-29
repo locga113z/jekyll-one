@@ -17,6 +17,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-toc
 
 # Permalinks
 permalink: /:categories/:title.html

@@ -2,6 +2,7 @@
 layout: post
 title: Thêm Tính Năng Tìm Kiếm Vào Jekyll Với 3 Bước Đơn Giản
 categories: Jekyll
+toc: true
 ---
 Việc tìm kiếm một nội dung cụ thể nào đó có thể khó khăn nếu một trang web không có tính năng tìm kiếm. Trang web của mình không có tính năng tìm kiếm trước đây vì mình có rất ít bài viết và trang. Cuối cùng, khi số lượng bài viết đó đã tăng lên, mình đã chịu thua khi tìm kiếm ngay cả một đoạn nhỏ trong một số bài viết mà mình đã viết.
 
