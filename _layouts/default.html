@@ -7,9 +7,10 @@ layout: compress
 {% include head.html %}
 <body style="background-color:#f2f2f2">
 {% include nav.html %}
-<main class="my-3"> <div class="container">
+<main class="my-3"> <div id="top" class="container">
+<div class="col-md-8">
 {{ content }}
-
+</div> <div class="col-md-4">
 <div class="card mb-3" id="search-container"> <div class="card-body">
 <h5 class="card-title">Tìm Kiếm</h5>
 <div class="form-group"> <input type="search" id="search-input" placeholder="Tìm kiếm..." class="form-control" /> </div>
@@ -37,7 +38,7 @@ SimpleJekyllSearch({
 {% endfor %}
 </ul>
 </div>
-
+</div>
 </div> </main>
 {% include foot.html %}
 <a href="#top" class="scrollup" style="display: inline;"> <i class="fal fa-long-arrow-up"></i> </a>
