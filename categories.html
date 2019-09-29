@@ -3,6 +3,7 @@ layout: default
 permalink: /categories
 title: Chuyên Mục
 ---
+<div class="card-group">
 {% for category in site.categories %}
   <div class="card mb-3" id="#{{ category_name | slugize }}"> <div class="card-body">
     {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -15,3 +16,6 @@ title: Chuyên Mục
     {% endfor %}
   </div> </div>
 {% endfor %}
+</div>
+
+</div> <div class="col-md-4">
