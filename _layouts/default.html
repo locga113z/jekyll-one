@@ -52,15 +52,14 @@ SimpleJekyllSearch({
       postURL = postsURL[randomIndex];
       postTitle = postsTitle[randomIndex];
       if (counter == (numberOfPosts - 1)) {
-        appendString += '<li class="list-group-item list-group-item-action"><a href="' + postURL + '"><h5>' + postTitle + '</h5></a></li>';
+        randomResults.innerHTML += '<li class="list-group-item list-group-item-action"><a href="' + postURL + '"><h5>' + postTitle + '</h5></a></li>';
       } else {
-        appendString += '<li class="list-group-item list-group-item-action"><a href="' + postURL + '"><h5>' + postTitle + '</h5></a></li>';
+        randomResults.innerHTML += '<li class="list-group-item list-group-item-action"><a href="' + postURL + '"><h5>' + postTitle + '</h5></a></li>';
       }
       randomIndexUsed.push(randomIndex);
       counter++;
     }
   }
-  randomResults.innerHTML = appendString;
 </script>
 
 </div> </main>
