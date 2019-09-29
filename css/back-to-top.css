@@ -1,29 +1,3 @@
-
-Thủ thuật lập trình Web - lập trình web - Web Development
-Ad
-Trang chủWordpressWordPress Themes
-Thịnh Nguyễn trong NukeViet ThemesWordPress Themes 3 năm trước đây
-Hướng dẫn tạo nút Back To Top cho website của bạn
-Ad
- Hướng dẫn tạo nút Back To Top cho website của bạn
- back-to-top
-
-Nút Back To Top hay còn gọi một cách đơn giản là nút trượt lên trên khi bạn đang ở cuối website. Nhưng nếu như bạn đang sử dụng framework thì sẽ có một số framework có sẵn nhưng đa phần thì cái này sẽ loại khỏi bộ framework bởi độ ưu tiên cao cũng như nó cũng không khó và phức tạp gì cả. Nhưng bạn đang cầm tìm một nút “Back To Top” hoạt động mượt mà uyển chuyển thì Thịnh chia sẻ với bạn đoạn mã tạo nút “Back To Top” cho bạn.
-
-Để có được nút backtotop thì bạn cần phải biết chút ít jquery, html và css. Khi bạn viết đoạn code này nó sẽ được tính theo dạng như sau, khi bắt đầu kéo xuống thì nút backtotop bắt đầu hiện lên và cho tới tận khi bạn kéo thanh cuộn xuống cuối site. Nhưng khi bạn click vào nó thì nó sẽ tự động nhảy về trên đầu trang theo dạng trượt  và nó sẽ tự ẩn đi theo tính toán sẵn.
-
-Nhưng điều quan trọng nữa là bạn cần thiết kế nút “Back To Top” đẹp hợp với site thì người dùng mới có cảm tình sử dụng nó.
-
-Sau đây là hướng dẫn viết đoạn mã nút backtotop dành cho bạn.
-
-Đầu tiên bạn cần soạn đoạn html như sau
-
-
-<a href="#" class="cd-top">Back To Top</a>
-
-Tiếp đến bạn viết đoạn css để trình bày hiển thị cũng như cho nó sang bên góc phải bên dưới màn hình như Thịnh đang sử dụng trên chính blog của thịnh
-
-
 /* back to top */a.cd-top {
 display: inline-block;
 height: 40px;
