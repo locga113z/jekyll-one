@@ -5,14 +5,12 @@ layout: default
 <nav>
   <ol class="breadcrumb bg-primary">
     <li class="breadcrumb-item"><a href="{{ site.url }}">Trang chủ</a></li>
-  {% if page.categories != "" %}
     <li class="breadcrumb-item">
 {% for category in page.categories %}
   <a href="{{ site.url }}/categories/#{{ category | slugize }}">{{ category | capitalize }}</a>
   {% unless forloop.last %}&nbsp;{% endunless %}
 {% endfor %}
     </li>
-  {% endif %}
     <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
   </ol>
 </nav>
