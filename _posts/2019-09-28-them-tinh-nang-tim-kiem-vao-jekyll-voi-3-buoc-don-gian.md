@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Thêm Tính Năng Tìm Kiếm Vào Jekyll Với 3 Bước Đơn Giản
+categories: Jekyll
+author: BROOK
 ---
 Việc tìm kiếm một nội dung cụ thể nào đó có thể khó khăn nếu một trang web không có tính năng tìm kiếm. Trang web của mình không có tính năng tìm kiếm trước đây vì mình có rất ít bài viết và trang. Cuối cùng, khi số lượng bài viết đó đã tăng lên, mình đã chịu thua khi tìm kiếm ngay cả một đoạn nhỏ trong một số bài viết mà mình đã viết.
 
@@ -24,7 +26,7 @@ Vì Jekyll không có thực thi được với phía máy chủ nên chúng ta 
 
 Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiêu đề trang, liên kết trang, danh mục, thẻ, mô tả, v.v., JSON (JavaScript Object Notation: Ký hiệu đối tượng JavaScript) là cách một cách mà đối với con người thì nó rất là dễ đọc, để lưu trữ dữ liệu theo cặp giá trị khóa (Có thể có hình thức khác tốt hơn). Ví dụ:
 
-```json
+```
 [
     {
      "Name": "BROOK"
@@ -35,7 +37,7 @@ Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiê
 
 Đầu tiên bạn hãy vào thư mục gốc và tạo một file có tên là `search.json` có nội dung sau đây:
 
-```
+``
 ---
 ---
 [
@@ -51,7 +53,7 @@ Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiê
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
-```
+``
 
 Những gì nó làm là nó chuyển đổi dữ liệu Jekyll của bạn từ tất cả các bài đăng và đặt nó làm cặp giá trị chính mà sau đó có thể dễ dàng được đọc bởi một tập lệnh tìm kiếm.
 
@@ -59,7 +61,7 @@ Nếu bạn đang dùng thử trên máy cục bộ thì bạn có thể xác mi
 
 Kết quả sẽ trông giống như thế này:
 
-```json
+```
         [
 
             {
@@ -85,7 +87,7 @@ Kết quả sẽ trông giống như thế này:
 
 Các mã trên có thể được thay đổi (cẩn thận đừng làm hỏng nó) theo nhu cầu của bạn. Xóa bất cứ trường nào không cần thiết cho trang web Jekyll của bạn. Thêm nếu bạn muốn bao gồm một số yếu tố khác hoặc nội dung của bài viết, mô tả, danh mục như dưới đây.
 
-```liquid
+```
 ---
 ---
 [
@@ -122,7 +124,7 @@ Vào trang [này](https://raw.githubusercontent.com/christian-fei/Simple-Jekyll-
 
 Tạo file `search.html` (hoặc bất kỳ tên nào và dán code sau:
 
-```html
+```
 <!-- Giao diện HTML -->
 <div id="search-container">
 <input type="text" id="search-input" placeholder="search...">
@@ -156,13 +158,13 @@ Nếu tìm kiếm không hoạt động thì hãy sử dụng tùy chọn consol
 
 Ở mặc định thì kết quả nó sẽ trông như này:
 
-```html
+```
 <li><a href="{url}">{title}</a></li>
 ```
 
 Bạn có thể thay đổi nó bằng cách thêm dòng này vào đoạn Javascript,
 
-```javascript
+```
 searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>',
 ```
 
@@ -170,7 +172,7 @@ searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</sp
 
 Bạn cũng có thể hiển thị thông báo khi không tìm thấy kết quả bằng cách thêm dòng này vào tập lệnh cấu hình:
 
-```javascript
+```
 noResultsText: 'Không tìm thấy kết quả!',
 ```
 
