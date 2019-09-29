@@ -1,16 +1,16 @@
 # Site settings
-title:          "Collect"
-description:    "Blog Sưu Tầm"
-baseurl:        "/"
-url:            "https://mellody.netlify.com"
+title: "Collect"
+description: "Blog Sưu Tầm"
+baseurl: "/"
+url: "https://mellody.netlify.com"
 
 # Author
 author:
-  name:         BROOK
-  email:        ice147ender@gmail.com
+  name: BROOK
+  email: ice147ender@gmail.com
 
 # Build settings
-markdown:       kramdown
+markdown: kramdown
 
 # Gems
 plugins:
@@ -19,8 +19,8 @@ plugins:
   - jekyll-seo-tag
 
 # Permalinks
-permalink:      /:title.html
-paginate:       12
+permalink: /:categories/:title.html
+paginate: 12
 
 # Navbar
 nav:
@@ -28,3 +28,6 @@ nav:
     url: "/"
   - title: "Thông tin"
     url: "#!"
+
+# Just-comment Api
+comments_api: 3113aa74-bf26-4a15-9a64-9fd94ad21d97
