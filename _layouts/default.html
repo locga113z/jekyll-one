@@ -7,7 +7,7 @@ layout: compress
 {% include head.html %}
 <body style="background-color:#f2f2f2">
 {% include nav.html %}
-<main class="my-3"> <div id="top" class="container"> <div class="row">
+<main class="my-3"> <div id="top" class="container-fluid"> <div class="row">
 <div class="col-md-8">
 {{ content }}
 </div> <div class="col-md-4">
@@ -29,7 +29,7 @@ SimpleJekyllSearch({
 })
 </script>
 
-<div class="card mb-3" id="search-container"> <div class="card-body"> <h5 class="card-title">Chuyên Mục</h5> </div>
+<div class="card"> <div class="card-body"> <h5 class="card-title">Chuyên Mục</h5> </div>
 <ul class="list-group list-group-flush" id="results-container">
 {% for category in site.categories %}
 {% capture category_name %}{{ category | first }}{% endcapture %}
