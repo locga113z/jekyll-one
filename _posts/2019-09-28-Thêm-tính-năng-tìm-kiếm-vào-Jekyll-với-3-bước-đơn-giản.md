@@ -4,7 +4,7 @@ title: Thêm Tính Năng Tìm Kiếm Vào Jekyll Với 3 Bước Đơn Giản
 ---
 Việc tìm kiếm một nội dung cụ thể nào đó có thể khó khăn nếu một trang web không có tính năng tìm kiếm. Trang web của mình không có tính năng tìm kiếm trước đây vì mình có rất ít bài viết và trang. Cuối cùng, khi số lượng bài viết đó đã tăng lên, mình đã chịu thua khi tìm kiếm ngay cả một đoạn nhỏ trong một số bài viết mà mình đã viết.
 
-# Tại sao một blog Jekyll cần tính năng tìm kiếm?
+### Tại sao một blog Jekyll cần tính năng tìm kiếm?
 
 Nếu trang Jekyll của bạn chỉ có 4 đến 5 trang thì bạn sẽ không cần tính năng tìm kiếm, bởi lẽ tất cả các trang đó có thể được liệt kê liên kết trong một thanh menu hoặc hiển thị trên chân trang. Tuy nhiên đối với một blog Jekyll với rất nhiều bài viết thì phải cần đến một thanh tìm kiếm. Có rất nhiều tùy chọn có sẵn để thêm thanh tìm kiếm vào trong Jekyll như:
 
@@ -18,7 +18,7 @@ Qua đánh giá trên thì các bạn biết trong bài này mình sẽ nói v�
 
 Đây là một bản demo đơn giản của Simple Jekyll Search giúp tìm từ khóa trong 5 bài đăng gần đây: [Ấn vào đây để xem demo](https://blog.webjeda.com/demo/instant-jekyll-search/).
 
-# Làm thế nào để thêm Jekyll Instant Search?
+### Làm thế nào để thêm Jekyll Instant Search?
 
 Vì Jekyll không có thực thi được với phía máy chủ nên chúng ta phải dựa vào việc lưu trữ tất cả nội dung cần thiết trong một tệp và tìm kiếm từ khóa của chúng ta từ tệp đó.
 
@@ -31,7 +31,7 @@ Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiê
     }
 ]
 ```
-# Bước 1: Tạo một tệp JSON
+### Bước 1: Tạo một tệp JSON
 
 Đầu tiên bạn hãy vào thư mục gốc và tạo một file có tên là `search.json` có nội dung sau đây:
 
@@ -112,13 +112,13 @@ Bạn cũng có thể thêm `post.content` vào đây nhưng mình khuyên bạn
 
 Từ những gì mình đã trải nghiệm, giá trị bạn đặt lên đầu sẽ được ưu tiên. Trong ví dụ trên, tiêu đề sẽ được ưu tiên cao nhất và đoạn trích được thấp nhất. Thay đổi điều này theo nhu cầu của bạn.
 
-# Bước 2: Tạo tệp script
+### Bước 2: Tạo tệp script
 
 Vào trang [này](https://raw.githubusercontent.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js) sao chép toàn bộ và lưu với tên `search-script.js` (hoặc bất kỳ tên nào) tại trang của bạn.
 
 > Sẽ tốt hơn nếu bạn tạo thư mục `js` và bỏ nó vào.
 
-# Bước 3: Tạo trang tìm kiếm
+### Bước 3: Tạo trang tìm kiếm
 
 Tạo file `search.html` (hoặc bất kỳ tên nào và dán code sau:
 
@@ -152,7 +152,7 @@ Vậy là xong! Hãy thử nhập một cái gì đó và xem kết quả nếu 
 
 Nếu tìm kiếm không hoạt động thì hãy sử dụng tùy chọn console » trên trình duyệt Chrome để xem lỗi là gì. Nhiều lần JSON được tạo sẽ không hợp lệ vì có một số ký tự đặc biệt. Ngoài ra, thứ tự mà tập lệnh tìm kiếm cũng có thể gây ra vấn đề.
 
-# Tùy chỉnh
+### Tùy chỉnh
 
 Ở mặc định thì kết quả nó sẽ trông như này:
 
@@ -178,7 +178,7 @@ noResultsText: 'Không tìm thấy kết quả!',
 
 Có nhiều tùy chọn khác có thể tùy chỉnh. Truy cập [vào đây](https://github.com/christian-fei/Simple-Jekyll-Search) để biết thêm.
 
-# Tổng kết
+### Tổng kết
 
 Có thể có một vài sai sót trong khi triển khai Simple Jekyll Search và nó có thể không nhận được kết quả. Tin mình đi, mình đã từng bị. Đừng bỏ cuộc, hãy làm theotừng bước mà không bỏ bước nào. Sử dụng công cụ Google Chrome Inspect » Console để xem  sai sót ở chỗ nào.
 

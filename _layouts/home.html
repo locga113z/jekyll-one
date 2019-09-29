@@ -6,7 +6,7 @@ layout: default
 {% for post in paginator.posts %}
   <div class="card mb-3">
     <div class="card-body">
-      <h1 class="card-title"><a  href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h1>
+      <h2 class="card-title"><a  href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h2>
       <small class="card-subtitle my-2 text-muted"><i class="fal fa-clock"></i> {{ post.date | date: "%H:%M %d/%m/%Y" }}</small>
       <p class="card-text"> {{ post.content | strip | strip_html | truncatewords: 50 }} </p>
       <a class="btn btn-primary" href="{{ post.url | prepend: site.url }}">Đọc tiếp</a>
