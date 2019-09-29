@@ -5,6 +5,9 @@ layout: default
 <nav>
   <ol class="breadcrumb bg-primary">
     <li class="breadcrumb-item"><a href="{{ site.url }}">Trang chủ</a></li>
+  {% if post.categories %}
+    <li class="breadcrumb-item">{{ post.categories }}</li>
+  {% endif %}
     <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
   </ol>
 </nav>
