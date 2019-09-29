@@ -19,6 +19,7 @@ layout: default
 <small class="card-subtitle my-2 text-muted"><span class="mx-2"><i class="fal fa-clock"></i> {{ page.date | date: "%H:%M %d/%m/%Y" }}</span> <span class="mx-2"><i class="fal fa-user"></i> {{ page.author |default: "BROOK" }}</span> <span class="mx-2"><i class="fal fa-folder"></i> {% for category in page.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</span></small>
 <p class="card-text text-justify"> {{ content }} </p>
 </div> </div>
+{% if page.comment == "true" %}
 <div class="card mb-3">
 <div
  class="just-comments card-body"
@@ -32,3 +33,4 @@ layout: default
 </div>
 <script async src="https://just-comments.com/w2.js"></script>
 <script src='https://just-comments.com/auth2.js' async defer></script>
+{% endif %}
