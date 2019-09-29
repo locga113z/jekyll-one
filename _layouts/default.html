@@ -7,7 +7,7 @@ layout: compress
 {% include head.html %}
 <body style="background-color:#f2f2f2">
 {% include nav.html %}
-<main class="my-3"> <div id="top" class="container">
+<main class="my-3"> <div id="top" class="container"> <div class="row">
 <div class="col-md-8">
 {{ content }}
 </div> <div class="col-md-4">
@@ -39,36 +39,13 @@ SimpleJekyllSearch({
 </ul>
 </div>
 </div>
-</div> </main>
+</div> </div> </main>
 {% include foot.html %}
 <a href="#top" class="scrollup" style="display: inline;"> <i class="fal fa-long-arrow-up"></i> </a>
 <link rel="stylesheet" href="https://locga113z.github.io/css/all.css" />
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script>
-jQuery(document).ready(function ($) {
-	if ($(window).scrollTop() > 200) {
-            	$('.scrollup').fadeIn();
-        } else {
-            	$('.scrollup').fadeOut();
-        }
- 
-	$(window).scroll(function () {
-	        if ($(this).scrollTop() > 200) {
-			$('.scrollup').fadeIn();
-	        } else {
-	            	$('.scrollup').fadeOut();
-	        }
-	});
- 
-	$('.scrollup').click(function () {
-	        $("html, body").animate({
-	            	scrollTop: 0
-	        }, 600);
-	        return false;
-	});
-});
-</script>
+<script>jQuery(document).ready(function(l){l(window).scrollTop()>200?l(".scrollup").fadeIn():l(".scrollup").fadeOut(),l(window).scroll(function(){l(this).scrollTop()>200?l(".scrollup").fadeIn():l(".scrollup").fadeOut()}),l(".scrollup").click(function(){return l("html, body").animate({scrollTop:0},600),!1})});</script>
 </body>
 </html>
