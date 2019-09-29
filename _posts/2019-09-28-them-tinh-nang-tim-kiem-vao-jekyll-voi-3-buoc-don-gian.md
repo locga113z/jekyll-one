@@ -40,8 +40,7 @@ Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiê
 ```
 ---
 ---
-[
-{% raw %}
+[{% raw %}
   {% for post in site.posts %}
     {
 
@@ -53,8 +52,7 @@ Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiê
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
-{% endraw %}
-]
+{% endraw %}]
 ```
 
 Những gì nó làm là nó chuyển đổi dữ liệu Jekyll của bạn từ tất cả các bài đăng và đặt nó làm cặp giá trị chính mà sau đó có thể dễ dàng được đọc bởi một tập lệnh tìm kiếm.
@@ -92,8 +90,7 @@ Các mã trên có thể được thay đổi (cẩn thận đừng làm hỏng 
 ```
 ---
 ---
-[
-{% raw %}
+[{% raw %}
   {% for post in site.posts %}
     {
 
@@ -106,8 +103,7 @@ Các mã trên có thể được thay đổi (cẩn thận đừng làm hỏng 
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
-{% endraw %}
-]
+{% endraw %}]
 ```
 
 Bộ lọc `escape` rất quan trọng bởi vì nếu bạn có một dấu ngoặc kép `"` bên trong giá trị của `post.description` thì toàn bộ JSON sẽ bị hỏng và không sử dụng được. Mình cũng khuyên bạn không nên sử dụng toàn bộ nội dung của bài viết để tạo JSON vì nó có thể dẫn đến việc tạo một tệp có kích thước rất lớn.
