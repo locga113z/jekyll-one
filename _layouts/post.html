@@ -5,8 +5,8 @@ layout: default
 <nav>
   <ol class="breadcrumb bg-primary">
     <li class="breadcrumb-item"><a href="{{ site.url }}">Trang chủ</a></li>
-  {% if post.categories %}
-    <li class="breadcrumb-item">{{ post.categories }}</li>
+  {% if page.categories %}
+    <li class="breadcrumb-item">{{ page.categories | capitalize }}</li>
   {% endif %}
     <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
   </ol>
@@ -14,6 +14,6 @@ layout: default
 
 <div class="card mb-3"> <div class="card-body">
 <h2 class="card-title">{{ page.title }}</h2>
-<small class="card-subtitle my-2 text-muted"><i class="fal fa-clock"></i> {{ page.date | date: "%H:%M %d/%m/%Y" }}</small>
+<small class="card-subtitle my-2 text-muted"><i class="fal fa-clock"></i> {{ page.date | date: "%H:%M %d/%m/%Y" }} <i class="fal fa-folder"></i> {{ page.categories | capitalize | join: ', '}}</small>
 <p class="card-text"> {{ content }} </p>
 </div> </div>
