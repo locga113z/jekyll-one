@@ -9,7 +9,7 @@ title: Chuyên Mục
     {% capture category_size %}{{ category[1].size }}{% endcapture %}
     <h5 class="card-title">{{ category_name | capitalize }} <span class="badge badge-primary badge-pill">{{ category_size }}</span></h5>
     {% for post in site.categories[category_name] %}
-    <ul class="list-unstyled ml-3">
+    <ul class="list-unstyled ml-2">
       <li><a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></li>
     </ul>
     {% endfor %}
