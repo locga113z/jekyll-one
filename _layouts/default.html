@@ -27,6 +27,15 @@ SimpleJekyllSearch({
 })
 </script>
 
+<div class="card mb-3" id="search-container"> <div class="card-body">
+<h5 class="card-title">Chuyên Mục</h5>
+<ul class="list-group list-group-flush" id="results-container">
+{% for category in site.categories %}
+<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"><a href="{{ category_name | slugize }}"><h5>{{ category_name | capitalize }}</h5></a> <span class="badge badge-primary badge-pill">{{ category_size }}</span></span></li>
+{% endfor %}
+</ul>
+</div> </div>
+
 </div> </main>
 {% include foot.html %}
 <link rel="stylesheet" href="https://locga113z.github.io/css/all.css" />
