@@ -17,9 +17,9 @@ layout: default
 <div class="card mb-3"> <div class="card-body">
 <h2 class="card-title">{{ page.title }}</h2>
 <p class="card-subtitle my-2 text-muted"> <ul class="list-inline">
-<li><i class="fal fa-clock"></i> {{ page.date | date: "%d/%m/%Y" }}</li>
-<li><i class="fal fa-user"></i> {{ page.author |default: site.author['name'] }}</li>
-<li><i class="fal fa-folder"></i> {% for category in page.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</li>
+<li class="list-inline-item"><i class="fal fa-calendar"></i> {{ page.date | date: "%d/%m/%Y" }}</li>
+<li class="list-inline-item"><i class="fal fa-user"></i> {{ page.author |default: site.author['name'] }}</li>
+<li class="list-inline-item"><i class="fal fa-folder"></i> {% for category in page.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</li>
 </ul> </p>
 <div class="card-text text-justify"> {{ content | toc }} </div>
 </div> </div>
