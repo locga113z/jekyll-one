@@ -5,8 +5,13 @@ layout: default
 <nav>
   <ol class="breadcrumb bg-primary">
     <li class="breadcrumb-item"><a href="{{ site.url }}">Trang chủ</a></li>
-  {% if page.categories %}
-    <li class="breadcrumb-item">{{ page.categories | capitalize }}</li>
+  {% if page.categories != "" %}
+    <li class="breadcrumb-item">
+{% for category in page.categories %}
+  <a href="{{ site.url }}/categories/#{{ category | slugize }}">{{ category | capitalize }}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+{% endfor %}
+    </li>
   {% endif %}
     <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
   </ol>
@@ -14,6 +19,6 @@ layout: default
 
 <div class="card mb-3"> <div class="card-body">
 <h2 class="card-title">{{ page.title }}</h2>
-<small class="card-subtitle my-2 text-muted"><i class="fal fa-clock"></i> {{ page.date | date: "%H:%M %d/%m/%Y" }} <i class="fal fa-folder"></i> {{ page.categories | capitalize | join: ', '}}</small>
+<small class="card-subtitle my-2 text-muted"><span class="mx-2"><i class="fal fa-clock"></i> {{ page.date | date: "%H:%M %d/%m/%Y" }}</span> <span class="mx-2"><i class="fal fa-folder"></i> {% for category in page.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</span></small>
 <p class="card-text"> {{ content }} </p>
 </div> </div>
