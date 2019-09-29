@@ -37,10 +37,11 @@ Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiê
 
 Đầu tiên bạn hãy vào thư mục gốc và tạo một file có tên là `search.json` có nội dung sau đây:
 
-``
+```
 ---
 ---
 [
+{% raw %}
   {% for post in site.posts %}
     {
 
@@ -52,8 +53,9 @@ Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiê
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
+{% endraw %}
 ]
-``
+```
 
 Những gì nó làm là nó chuyển đổi dữ liệu Jekyll của bạn từ tất cả các bài đăng và đặt nó làm cặp giá trị chính mà sau đó có thể dễ dàng được đọc bởi một tập lệnh tìm kiếm.
 
@@ -91,6 +93,7 @@ Các mã trên có thể được thay đổi (cẩn thận đừng làm hỏng 
 ---
 ---
 [
+{% raw %}
   {% for post in site.posts %}
     {
 
@@ -103,6 +106,7 @@ Các mã trên có thể được thay đổi (cẩn thận đừng làm hỏng 
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
+{% endraw %}
 ]
 ```
 
