@@ -146,7 +146,7 @@ Thành thật mà nói thì bước này không cần thiết lắm. Bạn có t
 
 Chú ý chỗ đường dẫn cho tệp script và tệp JSON. Nếu bất kỳ một trong số chúng sai thì bạn sẽ không nhận được bất kỳ kết quả nào.
 
-Tôi khuyên bạn không nên sử dụng cái này trên layout (được sử dụng trên mỗi trang) vì nó có thể dẫn đến tải trang chậm hơn. Hãy sử dụng một trang tìm kiếm riêng để thay thế.
+Mình khuyên bạn không nên sử dụng cái này trên layout (được sử dụng trên mỗi trang) vì nó có thể dẫn đến tải trang chậm hơn. Hãy sử dụng một trang tìm kiếm riêng để thay thế.
 
 Vậy là xong! Hãy thử nhập một cái gì đó và xem kết quả nếu nó tìm nạp bất kỳ kết quả nào.
 
