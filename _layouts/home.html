@@ -8,7 +8,7 @@ layout: default
     <div class="card-body">
       <h2 class="card-title"><a  href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h2>
       <p class="card-subtitle my-2 text-muted"> <ul class="list-inline">
-        <li class="list-inline-item"><i class="fal fa-clock"></i> {{ post.date | date: "%d/%m/%Y" }}</li>
+        <li class="list-inline-item"><i class="fal fa-calendar"></i> {{ post.date | date: "%d/%m/%Y" }}</li>
         <li class="list-inline-item"><i class="fal fa-user"></i> {{ post.author |default: site.author['name'] }}</li>
         <li class="list-inline-item"><i class="fal fa-folder"></i> {% for category in post.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</li>
       </ul> </p>
