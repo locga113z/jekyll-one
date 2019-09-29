@@ -33,7 +33,7 @@ SimpleJekyllSearch({
 {% for category in site.categories %}
 {% capture category_name %}{{ category | first }}{% endcapture %}
 {% capture category_size %}{{ category[1].size }}{% endcapture %}
-<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"><a href="{{ category_name | slugize }}"><h5>{{ category_name | capitalize }}</h5></a> <span class="badge badge-primary badge-pill">{{ category_size }}</span></span></li>
+<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"><a href="/categories/#{{ category_name | slugize }}"><h5>{{ category_name | capitalize }}</h5></a> <span class="badge badge-primary badge-pill">{{ category_size }}</span></span></li>
 {% endfor %}
 </ul>
 </div> </div>
