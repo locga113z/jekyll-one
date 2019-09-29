@@ -6,6 +6,7 @@ title: Chuyên Mục
 {% for category in site.categories %}
   <div class="card mb-3" id="#{{ category_name | slugize }}"> <div class="card-body">
     {% capture category_name %}{{ category | first }}{% endcapture %}
+    {% capture category_size %}{{ category | last }}{% endcapture %}
     <h5 class="card-title">{{ category_name | capitalize }} <span class="badge badge-primary badge-pill">{{ category_size }}</span></h5>
     {% for post in site.categories[category_name] %}
     <ul class="list-unstyled ml-3">
