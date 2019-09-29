@@ -35,7 +35,7 @@ Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiê
 
 Đầu tiên bạn hãy vào thư mục gốc và tạo một file có tên là `search.json` có nội dung sau đây:
 
-```liquid
+```
 ---
 ---
 [
