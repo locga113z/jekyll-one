@@ -62,25 +62,23 @@ Nếu bạn đang dùng thử trên máy cục bộ thì bạn có thể xác mi
 Kết quả sẽ trông giống như thế này:
 
 ```
-        [
+[
+    {
+      "title"    : "Materialized",
+      "url"      : "/materialized/",
+      "category" : "cards",
+      "image"    : "materialized.png",
+      "dev"      : "lpsandaruwan"
+    }    ,
 
-            {
-              "title"    : "Materialized",
-              "url"      : "/materialized/",
-              "category" : "cards",
-              "image"    : "materialized.png",
-              "dev"      : "lpsandaruwan"
-            }
-            ,
-
-            {
-              "title"    : "Time-machine",
-              "url"      : "/time-machine/",
-              "category" : "onepage",
-              "image"    : "time-machine.png",
-              "dev"      : "pages-themes"
-            }
-        ]
+    {
+      "title"    : "Time-machine",
+      "url"      : "/time-machine/",
+      "category" : "onepage",
+      "image"    : "time-machine.png",
+      "dev"      : "pages-themes"
+    }
+]
 ```
 
 Đây là một mẫu đơn giản từ một trang web của mình, nơi mình đã thêm tính năng tìm kiếm.
@@ -176,13 +174,13 @@ Bạn cũng có thể hiển thị thông báo khi không tìm thấy kết qu�
 noResultsText: 'Không tìm thấy kết quả!',
 ```
 
-> Hãy nhớ rằng, sau cùng là dấu phẩy `,` thì không ở cuối cùng. Ở cuối cùng thì sau cũng không có dấu phẩy.
+> Hãy nhớ rằng, sau cùng là dấu phẩy `,` thì không ở cuối cùng. Ở cuối cùng thì sau cùng không có dấu phẩy.
 
 Có nhiều tùy chọn khác có thể tùy chỉnh. Truy cập [vào đây](https://github.com/christian-fei/Simple-Jekyll-Search) để biết thêm.
 
 ### Tổng kết
 
-Có thể có một vài sai sót trong khi triển khai Simple Jekyll Search và nó có thể không nhận được kết quả. Tin mình đi, mình đã từng bị. Đừng bỏ cuộc, hãy làm theotừng bước mà không bỏ bước nào. Sử dụng công cụ Google Chrome Inspect » Console để xem  sai sót ở chỗ nào.
+Có thể có một vài sai sót trong khi triển khai Simple Jekyll Search và nó có thể không nhận được kết quả. Tin mình đi, mình đã từng bị. Đừng bỏ cuộc, hãy làm theo từng bước mà không bỏ bước nào. Sử dụng công cụ Google Chrome Inspect » Console để xem  sai sót ở chỗ nào.
 
 Tìm kiếm tức thì chắc chắn sẽ giúp người xem của bạn tìm thấy những gì họ muốn kiếm dễ dàng hơn và nhanh chóng hơn. Yếu tố này sẽ gián tiếp giúp giảm tỷ lệ thoát trang của bạn.
 
