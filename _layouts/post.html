@@ -1,19 +1,6 @@
 ---
 layout: default
 ---
-<nav>
-  <ol class="breadcrumb bg-primary">
-    <li class="breadcrumb-item"><a href="{{ site.url }}">Trang chủ</a></li>
-    <li class="breadcrumb-item">
-{% for category in page.categories %}
-  <a href="{{ site.url }}/categories/#{{ category | slugize }}">{{ category | capitalize }}</a>
-  {% unless forloop.last %}&nbsp;{% endunless %}
-{% endfor %}
-    </li>
-    <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
-  </ol>
-</nav>
-
 <div class="card mb-3"> <div class="card-body">
 <h2 class="card-title">{{ page.title }}</h2>
 <p class="card-subtitle my-2 text-muted"> <ul class="list-inline">
