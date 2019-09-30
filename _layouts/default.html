@@ -7,7 +7,7 @@ layout: compress
 {% include head.html %}
 <body style="background-color:#f2f2f2">
 {% include nav.html %}
-<main class="my-3"> <div id="top" class="container-fluid"> <div class="row">
+<main class="my-3"> <div class="container-fluid"> <div class="row">
 <div class="col-md-8">
 {{ content }}
 
@@ -41,11 +41,12 @@ SimpleJekyllSearch({
 </div>
 </div> </div> </main>
 {% include foot.html %}
-<a href="#top" class="scrollup" style="display: inline;"> <i class="fal fa-long-arrow-up"></i> </a>
+<a href="#!" class="scrollup" style="display: inline;"> <i class="fal fa-long-arrow-up"></i> </a>
 <link rel="stylesheet" href="https://locga113z.github.io/css/all.css" />
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script>jQuery(document).ready(function(l){l(window).scrollTop()>200?l(".scrollup").fadeIn():l(".scrollup").fadeOut(),l(window).scroll(function(){l(this).scrollTop()>200?l(".scrollup").fadeIn():l(".scrollup").fadeOut()}),l(".scrollup").click(function(){return l("html, body").animate({scrollTop:0},600),!1})});</script>
+<script>$(document).ready(function(){$('a[href^="#"]').on("click",function(o){o.preventDefault();var n=this.hash,t=$(n);$("html, body").stop().animate({scrollTop:t.offset().top},900,"swing",function(){window.location.hash=n})})});</script>
 </body>
 </html>
