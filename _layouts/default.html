@@ -47,20 +47,5 @@ SimpleJekyllSearch({
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script>jQuery(document).ready(function(l){l(window).scrollTop()>200?l(".scrollup").fadeIn():l(".scrollup").fadeOut(),l(window).scroll(function(){l(this).scrollTop()>200?l(".scrollup").fadeIn():l(".scrollup").fadeOut()}),l(".scrollup").click(function(){return l("html, body").animate({scrollTop:0},600),!1})});</script>
-<script>
-$("a[href*='#']:not([href='#'])").click(function(e) {
-  e.preventDefault();
-  var hash = this.hash;
-  var section = $(hash);
-
-  if (hash) { 
-    $('html, body').animate({
-      scrollTop: section.offset().top
-    }, 600, 'swing', function(){
-      history.replaceState({}, "", hash);
-    });
-  }
-});
-</script>
 </body>
 </html>
