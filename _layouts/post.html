@@ -10,6 +10,7 @@ layout: default
 </ul> </p>
 <div class="card-text text-justify"> {{ content | toc }} </div>
 </div> </div>
+<script>$(document).ready(function(){$('a[href^="#"]').on("click",function(o){o.preventDefault();var n=this.hash,t=$(n);$("html, body").stop().animate({scrollTop:t.offset().top},900,"swing",function(){window.location.hash=n})})});</script>
 {% if page.comments != false %}
 </div> <div class="col-md-4">
 <div class="card mb-3">
