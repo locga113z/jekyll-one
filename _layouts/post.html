@@ -10,8 +10,8 @@ layout: default
 </ul> </p>
 <div class="card-text text-justify"> {{ content | toc }} </div>
 </div> </div>
-{% if page.comments != false %}
 </div> <div class="col-md-4">
+{% if page.comments != false %}
 <div class="card mb-3">
 <div
  class="just-comments card-body"
@@ -28,3 +28,31 @@ layout: default
 <script async src="https://just-comments.com/w2.js"></script>
 <script src='https://just-comments.com/auth2.js' async defer></script>
 {% endif %}
+<div class="card mb-3"> <div class="card-body"> <h5 class="card-title">Bài Đăng Liên Quan</h5> </div>
+<ul class="list-group list-group-flush">
+{% assign maxRelated = 5 %}
+{% assign minCommonTags =  2 %}
+{% assign maxRelatedCounter = 0 %}
+{% for post in site.posts %}
+    {% assign sameTagCount = 0 %}
+    {% assign commonTags = '' %}
+    {% for category in post.categories %}
+      {% if post.url != page.url %}
+        {% if page.categories contains category %}
+          {% assign sameTagCount = sameTagCount | plus: 1 %}
+          {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
+          {% assign commonTags = commonTags | append: tagmarkup %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% if sameTagCount >= minCommonTags %}
+      <li class="list-group-item list-geoup-item-action">
+      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></h5>
+      </li>
+      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ul> </div>

@@ -16,7 +16,7 @@ Nếu trang Jekyll của bạn chỉ có 4 đến 5 trang thì bạn sẽ không
 
 > Đánh giá nhanh: Lunr rất nhanh chóng nhưng lại rất nặng. Google Custom thì lại nhẹ nhưng mà lại hoạt động chậm chạp. Chỉ có Simple Jekyll Search vừa nhẹ lại vừa nhanh chóng.
 
-Qua đánh giá trên thì các bạn biết trong bài này mình sẽ nói về cái nào rồi hén :D. Simple Jekyll Search được phát triển bởi **christian-fei**. Cho đến nay nó là công cụ tìm kiếm nhanh chóng và dễ dàng nhất có sẵn dành cho Jekyll. Bản quyền cũng thuộc về **Alex Pearce**, người đã đăng ý tưởng của về nó.
+Qua đánh giá trên thì các bạn biết trong bài này mình sẽ nói về cái nào rồi hén :D. Simple Jekyll Search được phát triển bởi **christian-fei**. Cho đến nay nó là công cụ tìm kiếm nhanh chóng và dễ dàng nhất có sẵn dành cho Jekyll. Bản quyền cũng thuộc về **Alex Pearce**, người đã đăng ý tưởng về nó.
 
 Đây là một bản demo đơn giản của Simple Jekyll Search giúp tìm từ khóa trong 5 bài đăng gần đây: [Ấn vào đây để xem demo](https://blog.webjeda.com/demo/instant-jekyll-search/).
 
@@ -24,7 +24,7 @@ Qua đánh giá trên thì các bạn biết trong bài này mình sẽ nói v�
 
 Vì Jekyll không có thực thi được với phía máy chủ nên chúng ta phải dựa vào việc lưu trữ tất cả nội dung cần thiết trong một tệp và tìm kiếm từ khóa của chúng ta từ tệp đó.
 
-Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiêu đề trang, liên kết trang, danh mục, thẻ, mô tả, v.v., JSON (JavaScript Object Notation: Ký hiệu đối tượng JavaScript) là cách một cách mà đối với con người thì nó rất là dễ đọc, để lưu trữ dữ liệu theo cặp giá trị khóa (Có thể có hình thức khác tốt hơn). Ví dụ:
+Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiêu đề trang, liên kết trang, danh mục, thẻ, mô tả, v.v., JSON (JavaScript Object Notation: Ký hiệu đối tượng JavaScript) là một cách giúp con người dễ đọc, để lưu trữ dữ liệu theo cặp giá trị khóa (Có thể có hình thức khác tốt hơn). Ví dụ:
 
 ```
 [
@@ -55,7 +55,7 @@ Chúng ta sẽ tạo một tệp JSON, trong đó chúng ta sẽ lưu trữ tiê
 {% endraw %}]
 ```
 
-Những gì nó làm là nó chuyển đổi dữ liệu Jekyll của bạn từ tất cả các bài đăng và đặt nó làm cặp giá trị chính mà sau đó có thể dễ dàng được đọc bởi một tập lệnh tìm kiếm.
+Những gì nó làm là chuyển đổi dữ liệu Jekyll của bạn từ tất cả các bài đăng và đặt nó làm cặp giá trị chính mà sau đó có thể dễ dàng được đọc bởi một tập lệnh tìm kiếm.
 
 Nếu bạn đang dùng thử trên máy cục bộ thì bạn có thể xác minh `search.json` trong thư mục `_site` để xem liệu tất cả các giá trị có được tạo hay không.
 
@@ -110,7 +110,7 @@ Bạn cũng có thể thêm `post.content` vào đây nhưng mình khuyên bạn
 
 > Đảm bảo rằng giá trị cuối cùng không có dấu phẩy `,` ở cuối.
 
-Từ những gì mình đã trải nghiệm, giá trị bạn đặt lên đầu sẽ được ưu tiên. Trong ví dụ trên, tiêu đề sẽ được ưu tiên cao nhất và đoạn trích được thấp nhất. Thay đổi điều này theo nhu cầu của bạn.
+Từ những gì mình đã trải nghiệm, giá trị bạn đặt lên đầu sẽ được ưu tiên. Trong ví dụ trên, tiêu đề sẽ được ưu tiên cao nhất và đoạn trích thấp nhất. Có thể thay đổi điều này theo nhu cầu của bạn.
 
 #### Bước 2: Tạo tệp script
 
@@ -120,7 +120,7 @@ Vào trang [này](https://raw.githubusercontent.com/christian-fei/Simple-Jekyll-
 
 #### Bước 3: Tạo trang tìm kiếm
 
-Tạo file `search.html` (hoặc bất kỳ tên nào và dán code sau:
+Tạo file `search.html` (hoặc bất kỳ tên nào) và dán code sau:
 
 ```
 <!-- Giao diện HTML -->
@@ -142,7 +142,7 @@ SimpleJekyllSearch({
 </script>
 ```
 
-Thành thật mà nói thì bước này không cần thiết lắm. Bạn có thể thêm code đó vào layout hoặc trang chủ của bạn. Tại sao mình không muốn thêm tìm kiếm trên tất cả các trang là bởi vì, tính năng tìm kiếm không được sử dụng bởi tất cả người dùng mọi lúc nên không có lý do để gọi tập lệnh tìm kiếm (khá lớn) trên tất cả các trang. Điều này có thể ảnh hưởng đến thời gian tải trang của bạn.
+Thành thật mà nói thì bước này không cần thiết lắm. Bạn có thể thêm code đó vào layout hoặc trang chủ của bạn. Mình không muốn thêm tìm kiếm trên tất cả các trang là bởi vì, tính năng tìm kiếm không được sử dụng mọi lúc nên không có lý do để gọi tập lệnh tìm kiếm (khá lớn) trên tất cả các trang. Điều này có thể ảnh hưởng đến thời gian tải trang của bạn.
 
 Chú ý chỗ đường dẫn cho tệp script và tệp JSON. Nếu bất kỳ một trong số chúng sai thì bạn sẽ không nhận được bất kỳ kết quả nào.
 
