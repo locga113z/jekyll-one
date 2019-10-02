@@ -4,7 +4,7 @@ title: Một Số Jekyll Snippets
 categories: jekyll
 toc: true
 ---
-Hôm nay mình sẽ chia sẻ một số Jekyll Snippets quan trọng có thể được chèn trực tiếp vào trang web Jekyll mà không cần chỉnh sửa gì hết.
+Hôm nay mình sẽ chia sẻ một số Jekyll Snippets hữu ích có thể được chèn trực tiếp vào trang web Jekyll mà không cần chỉnh sửa gì hết.
 
 Ở bài này, ngoài `html` và `liquid` thì mình cũng đã thêm một style. Bạn có thể phải sửa lại một số giá trị như chiều rộng, màu sắc, v.v., theo nhu cầu của bạn.
 
