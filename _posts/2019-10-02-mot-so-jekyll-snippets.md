@@ -10,7 +10,7 @@ Hôm nay mình sẽ chia sẻ một số Jekyll Snippets hữu ích có thể đ
 
 Bạn luôn có thể chuyển style sang `stylesheet` hoặc đưa lên `head`. Nhưng với style nội tuyến theo cách này sẽ tăng tốc thời gian tải trang.
 
-## Jekyll Pagination
+### Jekyll Pagination
 
 ```
 <!-- 
@@ -64,7 +64,7 @@ Bạn luôn có thể chuyển style sang `stylesheet` hoặc đưa lên `head`.
 </style>
 ```
 
-## Form liên hệ
+### Form liên hệ
 
 ```
 <!-- 
@@ -112,7 +112,7 @@ form.wj-contact input[type="submit"] {
 </style>
 ```
 
-## Form đăng ký nhận bài mới
+### Form đăng ký nhận bài mới
 
 ```
 <!-- 
@@ -151,7 +151,7 @@ form.wj-contact input[type="submit"] {
 </style> 
 ```
 
-## Mục lục
+### Mục lục
 
 Mình đã thiết kế nó để trông giống như Mục lục của Wikipedia. Bạn có thể tạo các đoạn css trong thẻ style để cá nhân hóa cho trang web của bạn.
 
@@ -185,7 +185,7 @@ Mình đã thiết kế nó để trông giống như Mục lục của Wikipedi
 </style>
 ```
 
-## Disqus lazy load
+### Disqus lazy load
 
 Việc tải thêm bình luận chỉ có ý nghĩa khi người dùng cuộn xuống phía dưới. Mã này sẽ tự động phát hiện, cuộn và tải thêm bình luận của Disqus khi bạn chạm đến cuối màn hình.
 
@@ -236,7 +236,7 @@ l(m,q));b.addEventListener("resize",l(m,q));b.disqusLoader=function(a,c){var d={
 </script>
 ```
 
-## Nút chia sẻ lên mạng xã hội
+### Nút chia sẻ lên mạng xã hội
 
 ```
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -314,7 +314,7 @@ l(m,q));b.addEventListener("resize",l(m,q));b.disqusLoader=function(a,c){var d={
 </div>
 ```
 
-## Thời gian đọc bài
+### Thời gian đọc bài
 
 ```
 <!-- 
