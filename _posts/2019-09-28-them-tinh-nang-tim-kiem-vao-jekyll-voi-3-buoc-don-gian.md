@@ -10,9 +10,9 @@ Việc tìm kiếm một nội dung cụ thể nào đó có thể khó khăn n�
 
 Nếu trang Jekyll của bạn chỉ có 4 đến 5 trang thì bạn sẽ không cần tính năng tìm kiếm, bởi lẽ tất cả các trang đó có thể được liệt kê liên kết trong một thanh menu hoặc hiển thị trên chân trang. Tuy nhiên đối với một blog Jekyll với rất nhiều bài viết thì phải cần đến một thanh tìm kiếm. Có rất nhiều tùy chọn có sẵn để thêm thanh tìm kiếm vào trong Jekyll như:
 
-> * Lunr
-> * Google Custom Search Engine
-> * Simple Jekyll Search
+* Lunr
+* Google Custom Search Engine
+* Simple Jekyll Search
 
 > Đánh giá nhanh: Lunr rất nhanh chóng nhưng lại rất nặng. Google Custom thì lại nhẹ nhưng mà lại hoạt động chậm chạp. Chỉ có Simple Jekyll Search vừa nhẹ lại vừa nhanh chóng.
 
