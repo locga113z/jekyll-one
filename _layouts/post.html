@@ -36,18 +36,18 @@ layout: default
 {% for post in site.posts %}
     {% assign sameTagCount = 0 %}
     {% assign commonTags = '' %}
-    {% for category in post.categories %}
+    {% for category in page.categories %}
       {% if post.url != page.url %}
         {% if page.categories contains category %}
           {% assign sameTagCount = sameTagCount | plus: 1 %}
-          {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
+          {% capture tagmarkup %} <span class="badge badge-primary">{{ category }}</span> {% endcapture %}
           {% assign commonTags = commonTags | append: tagmarkup %}
         {% endif %}
       {% endif %}
     {% endfor %}
     {% if sameTagCount >= minCommonTags %}
-      <li class="list-group-item list-geoup-item-action">
-      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></h5>
+      <li class="list-group-item list-group-item-action">
+      <h5><a href="{{ post.url | prepend: site.url }}">{{ post.title }}{{ commonTags }}</a></h5>
       </li>
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter >= maxRelated %}
