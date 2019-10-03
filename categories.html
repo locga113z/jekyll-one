@@ -9,11 +9,11 @@ title: Chuyên Mục
     {% capture category_name %}{{ category | first }}{% endcapture %}
     {% capture category_size %}{{ category[1].size }}{% endcapture %}
     <h5 class="card-title">{{ category_name | capitalize }} <span class="badge badge-primary badge-pill">{{ category_size }}</span></h5>
-    {% for post in site.categories[category_name] %}
     <ul class="list-unstyled posts-recent">
+    {% for post in site.categories[category_name] %}
       <li><a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></li>
-    </ul>
     {% endfor %}
+    </ul>
   </div> </div>
 {% endfor %}
 </div>
