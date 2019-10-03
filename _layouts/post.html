@@ -28,10 +28,11 @@ layout: default
 <script async src="https://just-comments.com/w2.js"></script>
 <script src='https://just-comments.com/auth2.js' async defer></script>
 {% endif %}
-<div class="card mb-3"> <div class="card-body"> <h5 class="card-title">Bài Viết Liên Quan</h5> </div>
-<ul class="list-group list-group-flush">
+<div class="card mb-3"> <div class="card-body">
+<h5 class="card-title">Bài Viết Liên Quan</h5>
+<ul class="list-unstyled posts-recent">
 {% assign maxRelated = 5 %}
-{% assign minCommonTags =  2 %}
+{% assign minCommonTags = 1 %}
 {% assign maxRelatedCounter = 0 %}
 {% for post in site.posts %}
     {% assign sameTagCount = 0 %}
@@ -46,8 +47,8 @@ layout: default
       {% endif %}
     {% endfor %}
     {% if sameTagCount >= minCommonTags %}
-      <li class="list-group-item list-group-item-action">
-      <h5><a href="{{ post.url | prepend: site.url }}">{{ post.title }}{{ commonTags }}</a></h5>
+      <li>
+      <a href="{{ post.url | prepend: site.url }}">{{ post.title }}{{ commonTags }}</a>
       </li>
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter >= maxRelated %}
@@ -55,4 +56,4 @@ layout: default
       {% endif %}
     {% endif %}
   {% endfor %}
-</ul> </div>
+</ul> </div> </div>
