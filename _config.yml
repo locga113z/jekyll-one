@@ -1,8 +1,8 @@
 # Site settings
 title: "POKE Zone"
 description: "Blog Sưu Tầm"
-baseurl: "/"
-url: "https://pokezone.gq"
+baseurl: /
+url: https://pokezone.gq
 
 # Author
 author:
@@ -27,9 +27,9 @@ paginate: 12
 # Navbar
 nav:
   - title: "Trang chủ"
-    url: "/"
+    url: /
   - title: "Thông tin"
-    url: "#!"
+    url: #!
 
 # Just-comment Api
 comments_api: 3113aa74-bf26-4a15-9a64-9fd94ad21d97
@@ -39,7 +39,7 @@ toc:
   min_level: 3
   max_level: 6
   no_toc_section_class: no_toc_section
-  list_class:
-  sublist_class:
-  item_class:
+  list_class: ''
+  sublist_class: ''
+  item_class: toc-entry
   item_prefix: toc-
