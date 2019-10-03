@@ -28,7 +28,7 @@ layout: default
 <script async src="https://just-comments.com/w2.js"></script>
 <script src='https://just-comments.com/auth2.js' async defer></script>
 {% endif %}
-<div class="card mb-3"> <div class="card-body"> <h5 class="card-title">Bài Đăng Liên Quan</h5> </div>
+<div class="card mb-3"> <div class="card-body"> <h5 class="card-title">Bài Viết Liên Quan</h5> </div>
 <ul class="list-group list-group-flush">
 {% assign maxRelated = 5 %}
 {% assign minCommonTags =  2 %}
@@ -36,7 +36,7 @@ layout: default
 {% for post in site.posts %}
     {% assign sameTagCount = 0 %}
     {% assign commonTags = '' %}
-    {% for category in page.categories %}
+    {% for category in post.categories %}
       {% if post.url != page.url %}
         {% if page.categories contains category %}
           {% assign sameTagCount = sameTagCount | plus: 1 %}
