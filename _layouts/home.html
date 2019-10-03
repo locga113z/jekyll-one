@@ -4,6 +4,7 @@ layout: default
 
 <div class="card-group">
 {% for post in paginator.posts %}
+<div class="row"> <div class="col-md-12">
   <div class="card mb-3">
     <div class="card-body">
       <h2 class="card-title"><a  href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h2>
@@ -16,6 +17,7 @@ layout: default
       <a class="btn btn-primary" href="{{ post.url | prepend: site.url }}">Đọc tiếp</a>
     </div>
   </div>
+</div>
 {% endfor %}
 </div>
 
