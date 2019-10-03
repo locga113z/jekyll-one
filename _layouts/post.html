@@ -8,8 +8,10 @@ layout: default
 <li class="list-inline-item"><i class="fal fa-user"></i> {{ page.author |default: site.author['name'] }}</li>
 <li class="list-inline-item"><i class="fal fa-folder"></i> {% for category in page.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</li>
 </ul> </p>
-{% if page.toc == true %} <p id="toc"> {% toc %} </p> {% endif %}
-<p class="card-text text-justify"> {{ content }} </p>
+<p class="card-text text-justify"> 
+{% if page.toc == true %} <div id="toc"> {% toc %} </div> {% endif %}
+{{ content }}
+</p>
 </div> </div>
 </div> <div class="col-md-4">
 {% if page.comments != false %}
