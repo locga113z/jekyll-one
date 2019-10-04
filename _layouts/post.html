@@ -3,12 +3,12 @@ layout: default
 ---
 <div class="card mb-3"> <div class="card-body">
 <h2 class="card-title">{{ page.title }}</h2>
-<p class="card-subtitle my-2 text-muted"> <ul class="list-inline">
+<p class="card-subtitle my-2"> <ul class="list-inline text-muted">
 <li class="list-inline-item"><i class="fal fa-calendar"></i> {{ page.date | date: "%d/%m/%Y" }}</li>
 <li class="list-inline-item"><i class="fal fa-user"></i> {{ page.author |default: site.author['name'] }}</li>
 <li class="list-inline-item"><i class="fal fa-folder"></i> {% for category in page.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</li>
 </ul> </p>
-<di class="card-text text-justify container"> 
+<div class="card-text text-justify container"> 
 {% if page.toc == true %} <div id="toc"> {% toc %} </div> {% endif %}
 {{ content }}
 </div>
