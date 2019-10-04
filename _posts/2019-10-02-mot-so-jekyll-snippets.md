@@ -13,6 +13,7 @@ Bạn luôn có thể chuyển style sang `stylesheet` hoặc đưa lên `head`.
 ### Jekyll Pagination
 
 ```
+{% raw %}
 <!-- 
      Trước khi thêm Jekyll snippet này, hãy đảm bảo:	
       1. Bạn đã thêm dòng "plugin: jekyll-pagination" tệp _config.yml.
@@ -62,11 +63,13 @@ Bạn luôn có thể chuyển style sang `stylesheet` hoặc đưa lên `head`.
     color: #333;
 }
 </style>
+{% endraw %}
 ```
 
 ### Form liên hệ
 
 ```
+{% raw %}
 <!-- 
      Sau khi thêm mẫu form liên hệ này, hãy đảm bảo:
       1. Bạn đã thêm dòng "email: youremail@email.com" vào trong tệp _config.yml.
@@ -110,11 +113,13 @@ form.wj-contact input[type="submit"] {
     height: auto;
 }
 </style>
+{% endraw %}
 ```
 
 ### Form đăng ký nhận bài mới
 
 ```
+{% raw %}
 <!-- 
      Trước khi thêm đoạn jekyll snippet này, hãy đảm bảo:
      1. Bạn đã đăng ký tài khoản ở Mailchimp.
@@ -148,7 +153,8 @@ form.wj-contact input[type="submit"] {
         border: 1px solid #2e83e6;;
         color: #eee;
     }
-</style> 
+</style>
+{% endraw %}
 ```
 
 ### Mục lục
@@ -156,6 +162,7 @@ form.wj-contact input[type="submit"] {
 Mình đã thiết kế nó để trông giống như Mục lục của Wikipedia. Bạn có thể tạo các đoạn css trong thẻ style để cá nhân hóa cho trang web của bạn.
 
 ```
+{% raw %}
 <!-- 
      Trước khi thêm đoạn jekyll snippet này, hãy đảm bảo:
      1. Bạn đã thêm dòng "markdown: kramdown" vào _config.yml.
@@ -183,6 +190,7 @@ Mình đã thiết kế nó để trông giống như Mục lục của Wikipedi
     display: inline-block;
 }
 </style>
+{% endraw %}
 ```
 
 ### Disqus lazy load
@@ -190,6 +198,7 @@ Mình đã thiết kế nó để trông giống như Mục lục của Wikipedi
 Việc tải thêm bình luận chỉ có ý nghĩa khi người dùng cuộn xuống phía dưới. Mã này sẽ tự động phát hiện, cuộn và tải thêm bình luận của Disqus khi bạn chạm đến cuối màn hình.
 
 ```
+{% raw %}
 <!-- 
      Trước khi thêm đoạn jekyll snippet này, hãy đảm bảo:
      1. Gửi lời cảm ơn đến css-tricks.com
@@ -234,11 +243,13 @@ l(m,q));b.addEventListener("resize",l(m,q));b.disqusLoader=function(a,c){var d={
 		}
 	});
 </script>
+{% endraw %}
 ```
 
 ### Nút chia sẻ lên mạng xã hội
 
 ```
+{% raw %}
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <style>
 .share-box a {
@@ -312,11 +323,13 @@ l(m,q));b.addEventListener("resize",l(m,q));b.disqusLoader=function(a,c){var d={
 
 <a class="e" href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{site.baseurl}}{{ page.url }}"><i class="fa fa-envelope fa"></i><span> email</span></a>                          
 </div>
+{% endraw %}
 ```
 
 ### Thời gian đọc bài
 
 ```
+{% raw %}
 <!-- 
     Trước khi sử dụng đoạn jekyll snippet này, hãy đảm bảo:
     1. Đừng quan tâm nếu IDE hiển thị lỗi
@@ -337,6 +350,7 @@ l(m,q));b.addEventListener("resize",l(m,q));b.disqusLoader=function(a,c){var d={
 <style>
     svg#i-clock {vertical-align: middle;}
 </style>
+{% endraw %}
 ```
 
 > *"Mày không thoát được đâu con trai! Tu bi không tình yêu..."*
