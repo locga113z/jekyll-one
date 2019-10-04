@@ -8,7 +8,7 @@ layout: default
 <li class="list-inline-item"><i class="fal fa-user"></i> {{ page.author |default: site.author['name'] }}</li>
 <li class="list-inline-item"><i class="fal fa-folder"></i> {% for category in page.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</li>
 </ul> </p>
-<div class="card-text text-justify container"> 
+<div class="card-text text-justify"> 
 {% if page.toc == true %} <div id="toc"> {% toc %} </div> {% endif %}
 {{ content }}
 </div>
