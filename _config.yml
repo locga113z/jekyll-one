@@ -31,8 +31,8 @@ nav:
   - title: "Thông tin"
     url: "#!"
 
-# Just-comment Api
-comments_api: 3113aa74-bf26-4a15-9a64-9fd94ad21d97
+# Disqus comment
+disqus_shortname: poke-zone
 
 # Toc - Liên kết nhanh trong bài viết
 toc:

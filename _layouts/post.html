@@ -14,23 +14,12 @@ layout: default
 </div>
 </div> </div>
 </div> <div class="col-md-4">
+
+{% if site.disqus_shortname %}{% unless page.disqus_disabled %} 
 {% if page.comments != false %}
-<div class="card mb-3">
-<div
- class="just-comments card-body"
- data-apikey="{{ site.comments_api }}"
- data-recaptcha="true"
- data-disablesociallogin="true"
- data-enablewebsite="true"
- data-disableprofilepictures="true"
- data-disablesharebutton="true"
- data-hideattribution="true"
- data-locale="vi"
-></div>
-</div>
-<script async src="https://just-comments.com/w2.js"></script>
-<script src='https://just-comments.com/auth2.js' async defer></script>
-{% endif %}
+<div class="card mb-3"><div id="disqus_thread"></div></div><script type="text/javascript">var disqus_shortname="{{ site.disqus_shortname }}";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://{{ site.disqus_shortname }}.disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}();</script> 
+{% endunless %}{% endif %}{% endif %}
+
 <div class="card mb-3"> <div class="card-body">
 <h5 class="card-title">Bài Viết Liên Quan</h5>
 <ul class="list-unstyled posts-recent">
