@@ -32,7 +32,7 @@ nav:
     url: "#!"
 
 # Disqus comment
-disqus_shortname: "poke-zone"
+disqus_shortname: poke-zone
 
 # Toc - Liên kết nhanh trong bài viết
 toc:
