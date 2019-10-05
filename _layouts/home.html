@@ -12,6 +12,7 @@ layout: default
         <li class="list-inline-item"><i class="fal fa-calendar"></i> {{ post.date | date: "%d/%m/%Y" }}</li>
         <li class="list-inline-item"><i class="fal fa-user"></i> {{ post.author |default: site.author['name'] }}</li>
         <li class="list-inline-item"><i class="fal fa-folder"></i> {% for category in post.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</li>
+        <li class="list-inline-item"><i class="fal fa-comments"></i> <a href="{{ post.url | prepend: site.url }}#disqus_thread" class="text-muted">bình luận</a></li>
       </ul> </p>
       <p class="card-text text-justify"> {{ post.content | strip | strip_html | truncatewords: 50 }} </p>
       <a class="btn btn-primary" href="{{ post.url | prepend: site.url }}">Đọc tiếp</a>
