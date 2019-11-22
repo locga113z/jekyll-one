@@ -5,4 +5,3 @@ gem 'jekyll-feed'
 gem 'jekyll-paginate'
 gem 'jekyll-toc'
 gem 'jekyll-sitemap'
-gem 'jekyll-admin', group: :jekyll_plugins
