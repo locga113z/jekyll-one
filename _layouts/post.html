@@ -9,9 +9,10 @@ layout: default
 <li class="list-inline-item"><i class="fal fa-folder"></i> {% for category in page.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</li>
 <li class="list-inline-item"><i class="fal fa-comments"></i> <a href="#disqus_thread" class="text-muted">bình luận</a></li>
 </ul> </p>
-<div class="card-text text-justify"> 
+<div class="card-text text-justify" id="noidung"> 
 {% if page.toc == true %} <div id="toc"> {% toc %} </div> {% endif %}
 {{ content }}
+<style>#noidung .img{border-radius:0.25rem !important;margin-top:0.25rem !important;margin-bottom:0.25rem !important}</style>
 </div>
 </div> </div>
 </div> <div class="col-md-4">
