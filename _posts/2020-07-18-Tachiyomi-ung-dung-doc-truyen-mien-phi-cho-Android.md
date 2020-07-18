@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Tachiyomi - Ứng dụng đọc truyện miễn phí cho Android
+title: Tachiyomi - Ứng Dụng Đọc Truyện Miễn Phí Cho Android
 categories: Android
 toc: true
 ---
-[color=red]**Lưu ý: Hình ảnh trong bài viết được chụp bằng chính chủ với độ sáng thấp. Nếu không thấy rõ thì bạn có thể tăng độ sáng của thiết bị lên để nhìn rõ một cách chính xác. Và nhớ đọc thật kĩ để không bỏ sót phần nào của bài.**[/color]
-
 ### Điểm nổi bật của Tachiyomi so với các ứng dụng khác:
 * Không phụ thuộc vào máy chủ: **mọi thứ** bạn thao tác với ứng dụng vẫn sẽ ở trên ứng dụng, **ngay cả khi nhà phát triển ngừng cập**, các **bookmarks**, **lịch sử truyện vẫn sẽ ở nguyên đó** miễn là bạn không gỡ ứng dụng
 * Nguồn truyện rộng lớn: lấy truyện từ **9 nguồn truyện phổ biến nhất Việt Nam** và **rất nhiều** nguồn truyện khác bao gồm nhiều ngôn ngữ
