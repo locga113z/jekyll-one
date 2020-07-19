@@ -17,9 +17,29 @@ layout: default
 </div> </div>
 </div> <div class="col-md-4">
 
-{% if site.disqus_shortname %}{% unless page.comments == false %}
-<div class="card mb-3"><div class="card-body"><div id="disqus_thread"></div></div></div>
-<script type="text/javascript">var disqus_shortname="{{ site.disqus_shortname }}";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://{{ site.disqus_shortname }}.disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}();</script> 
+{% if site.gitalk_clientID %}{% unless page.comments == false %}
+<div class="card mb-3"><div class="card-body">
+ <!-- Gitalk comment start  -->
+
+ <!-- Link Gitalk  -->
+ <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+ <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+ <div id="gitalk-container"></div>     <script type="text/javascript">
+     var gitalk = new Gitalk({
+
+     // Gitalk parameters
+         clientID: '{{ site.gitalk_clientID }}', //customize
+         clientSecret: '{{ site.gitalk_clientSecret }}', //customize
+         repo: 'jekyll-one', //customize
+         owner: 'locga113z', //customize
+         admin: ['locga113z'], //customize
+         id: window.location.pathname, // leave this line as it is
+        
+     });
+     gitalk.render('gitalk-container');
+ </script> 
+ <!-- Gitalk end -->
+</div></div>
 {% endunless %}{% endif %}
 
 <div class="card mb-3"> <div class="card-body">

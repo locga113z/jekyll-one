@@ -31,8 +31,9 @@ nav:
   - title: "Thông tin"
     url: "#!"
 
-# Disqus comment
-disqus_shortname: poke-zone
+# Gitalk comment
+gitalk_clientID: 67b6e2369ea727c71c21
+gitalk_clientSecret: c43ec9dff1aed94a2770be0df940d237b84d5b8a
 
 # Toc - Liên kết nhanh trong bài viết
 toc:
