@@ -7,7 +7,6 @@ layout: default
 <li class="list-inline-item"><i class="fal fa-calendar"></i> {{ page.date | date: "%d/%m/%Y" }}</li>
 <li class="list-inline-item"><i class="fal fa-user"></i> {{ page.author |default: site.author['name'] }}</li>
 <li class="list-inline-item"><i class="fal fa-folder"></i> {% for category in page.categories %} {{ category | capitalize }} {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}</li>
-<li class="list-inline-item"><i class="fal fa-comments"></i> <a href="#disqus_thread" class="text-muted">bình luận</a></li>
 </ul> </p>
 <div class="card-text text-justify" id="noidung"> 
 {% if page.toc == true %} <div id="toc"> {% toc %} </div> {% endif %}
@@ -41,6 +40,14 @@ layout: default
  <!-- Gitalk end -->
 </div></div>
 {% endunless %}{% endif %}
+
+<script src="https://utteranc.es/client.js"
+        repo="locga113z/jekyll-one"
+        issue-term="url"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
 <div class="card mb-3"> <div class="card-body">
 <h5 class="card-title">Bài Viết Liên Quan</h5>
