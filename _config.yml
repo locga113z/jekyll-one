@@ -32,8 +32,12 @@ nav:
     url: "#!"
 
 # Gitalk comment
-gitalk_clientID: 67b6e2369ea727c71c21
-gitalk_clientSecret: c43ec9dff1aed94a2770be0df940d237b84d5b8a
+gittalk:
+  clientID: 67b6e2369ea727c71c21
+  clientSecret: c43ec9dff1aed94a2770be0df940d237b84d5b8a
+  repository: jekyll-one
+  owner: locga113z
+  admin: locga113z
 
 # Toc - Liên kết nhanh trong bài viết
 toc:
